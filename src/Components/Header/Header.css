@@ -1,0 +1,145 @@
+.h-wrapper
+{
+    color: black;
+    background-color: white;
+}
+
+
+
+
+.h-menu
+{
+    gap:2rem;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.g-button
+{
+    gap:1rem;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-links {
+    flex-grow: 1; /* Anchor links take up remaining space */
+    text-align: center; /* Center align anchor links */
+  }
+  
+  .menu-buttons {
+    text-align: right; /* Right align buttons */
+  }
+  
+.h-menu>*:hover{
+    cursor: pointer;
+}
+
+.menu-icon
+{
+    display: none;
+}
+
+@media(max-width:803px)
+{
+    .menu-icon
+    {
+        display: block;
+    }
+ 
+}
+
+
+.menu div {
+  width: 30px;
+  height: 20px;
+  margin: 10px;
+  position: relative;
+}
+
+.menu span {
+  width: 100%;
+  height: 3px; /* Adjust the line height */
+  border-radius: 1px; /* Adjust the border radius */
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s, width 0.3s;
+}
+
+
+.menu .line-1
+{
+  transform: translate(-50% , -12px);
+}
+
+.menu .line-3
+{
+  transform: translate(-50% , 10px);
+} 
+
+
+.openmenu  .line-1
+{
+transform: translate(-50% , -50%) rotate(-45deg);
+}
+
+
+.openmenu  .line-3
+{
+transform: translate(-50% , -50%) rotate(45deg);
+}
+
+
+.openmenu .line-2
+{
+  width: 0;
+}
+
+
+.small-line
+{
+  font-size: 4px;
+}
+
+
+
+
+.navbar a
+{
+  position: relative;
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 500;
+  margin-right: 2.0rem;
+  text-decoration: none; 
+}  
+
+
+ul li .nav-link
+{
+    color: white;
+}
+
+
+@media(max-width:837px)
+{
+  .navbar a
+{
+  position: relative;
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 500;
+  margin-right: 1.0rem;
+  text-decoration: none; 
+}  
+
+}
+
+
+
+

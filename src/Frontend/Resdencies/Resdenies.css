@@ -1,0 +1,144 @@
+.r-container
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.r-head
+{
+    margin-bottom: 2rem;
+}
+
+
+.r-card {
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: max-content;
+    margin: auto;
+    transition: all 300ms ease-in;
+}
+
+.r-card > img {
+    width: 100%;
+    max-width: 15rem;
+}
+
+.r-card>:nth-child(2)
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.r-card>:nth-child(3)
+{
+    font-size: 1.5rem;
+}
+
+.r-card>:nth-child(4)
+{
+    font-size: 0.7rem;
+    width: 15rem;
+}
+
+.r-card:hover
+{
+    scale: 1.025;
+    cursor: pointer;
+    background: linear-gradient(180deg , rgba(255,255,255,0)0%,
+rgba(136,160,255,0.46)217.91%);
+box-shadow: 0px 72px 49px -51px rgba(136,160,255,0.12);
+}
+
+.swiper-horizontal
+{
+overflow: visible;
+}
+
+
+
+/* Apne CSS file mein */
+.r-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 210px; /* Yahan aap chahiye to 20px ya kisi aur suitable value set kar sakte hain */
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Center button container horizontally */
+    z-index: 999;
+  }
+  
+  .r-button {
+ 
+    font-size: 1.2rem;
+    height: 40px;
+    width: 40px;
+    color: blue;
+    border: none;
+    border-radius: 100px;
+    background-color: white;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  @media(max-width:1115px)
+  {
+    .r-buttons {
+      
+        position: absolute;
+        bottom: 230px; /* Yahan aap chahiye to 20px ya kisi aur suitable value set kar sakte hain */
+      
+      }
+      
+  }
+
+  @media(max-width:767px)
+  {
+    .r-buttons {
+       
+        position: absolute;
+        bottom: 215px; /* Yahan aap chahiye to 20px ya kisi aur suitable value set kar sakte hain */
+       
+      }
+      
+  }
+
+  
+  @media(max-width:720px)
+  {
+    .r-buttons {
+    
+        position: absolute;
+        bottom: 245px; /* Yahan aap chahiye to 20px ya kisi aur suitable value set kar sakte hain */
+      }
+      
+  }
+  
+  .r-button:hover {
+    background-color: #71e3ff;
+  }
+  
+
+
+.r-buttons>:nth-child(1)
+{
+    background-color: #EEEEFF;
+}
+
+.r-buttons>:nth-child(2)
+{
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
+} 
+
+
+@media(max-width:640px)
+{
+    .r-head{
+        align-items: center;
+    }
+    .r-buttons{
+        position: initial;
+    }
+}
